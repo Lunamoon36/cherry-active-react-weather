@@ -3,7 +3,10 @@ import './App.css';
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather App</h1><footer>
+      <div className='container'>
+
+      <h1>Weather App</h1>
+      <footer>
         This project was coded by
         <a
           href="https://github.com/Lunamoon36"
@@ -29,6 +32,7 @@ export default function App() {
           ><strong> Netlify </strong></a
         >
       </footer>
+          </div>
     </div>
   );
 }
