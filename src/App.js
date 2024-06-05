@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -5,12 +6,12 @@ export default function App() {
   return (
     <div className="App">
       <div className='container'>
-      <Weather />
+      <Weather defaultCity="Lisbon" />
       <footer>
         This project was coded by
         <a
           href="https://github.com/Lunamoon36"
-          class="myProfileLink"
+          className="myProfileLink"
           target="_blank"
           rel='noreferrer'
           ><strong> Cherry Atkinson </strong></a
@@ -18,7 +19,7 @@ export default function App() {
         and is on
         <a
           href="https://github.com/Lunamoon36/cherry-active-react-weather"
-          class="myGitHubLink"
+          className="myGitHubLink"
           target="_blank"
           rel='noreferrer'
           ><strong> GitHub </strong></a
@@ -26,13 +27,13 @@ export default function App() {
         and hosted on
         <a
           href="https://weathercherryplus.netlify.app/"
-          class="myNetlifyLink"
+          className="myNetlifyLink"
           target="_blank"
           rel='noreferrer'
-          ><strong> Netlify </strong></a
-        >
-      </footer>
-          </div>
+          ><strong> Netlify </strong>
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
